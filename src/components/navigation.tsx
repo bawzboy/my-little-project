@@ -1,14 +1,16 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Navigation() {
-    return (
+  return (
+    <div>
+      <nav className="container relative flex space-x-4 items-center p-4">
+        <Link className="text-2xl" href="/">
+          Home
+        </Link>
         <div>
-            <nav className="container relative flex space-x-4 items-center p-4">
-                <Link className="text-2xl" href="/">Home</Link>
-                <div>
-                    <Link href="/about">About</Link>
-                </div>
-            </nav>
+          <Link href="/about">About</Link>
         </div>
-    );
+      </nav>
+    </div>
+  );
 }
